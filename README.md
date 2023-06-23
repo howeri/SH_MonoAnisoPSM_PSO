@@ -3,7 +3,7 @@ Copyright (c) 2023 Eric Huang
 School of Electrical and Computer Engineering  
 Georgia Institute of Technology  
 
-The Matlab code associates with the paper "Efficient Monostatic Anisotropic Point Scatterer Model for High Performance Computing".
+The Matlab code associates with the manuscript "Efficient Monostatic Anisotropic Point Scatterer Model for High Performance Computing".
 
 High performance computing (HPC) electromagnetic (EM) emulators are used to simulate real-time EM wave interactions between numerous radar targets. The Radar Cross Section (RCS) data stores the reflection profiles of radar targets as a table; however, the needed storage size increases with the frequency sampling density, the aspect angle sampling density, and the number of target types used in the emulator. The large quantity of data needed often exceeds storage capability and limits the feasibility of manipulation and representation of the objects. The spherical harmonic based monostatic anisotropic point scatterer model is proposed specifically for HPC EM interaction simulations where the scattering response can be computed with a finite impulse response (FIR) filter. An efficient algorithm constructing this model with large scale RCS data is discussed. The scatterer position and the reflection profile of each scatterer are solved using least squares methods and particle swarm optimization (PSO). In addition, the function evaluations in PSO are accelerated by taking advantage of the matrix structure, making the algorithm 22 times faster comparing to the naive approach. The results show that the point scatterer model can effectively represent the RCS data of a radar target.
 
